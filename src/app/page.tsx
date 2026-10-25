@@ -1,10 +1,14 @@
 import Link from "next/link";
+import { BotonCerrarSesion } from "@/components/auth/boton-cerrar-sesion";
 import { Isotipo } from "@/components/marca/logo";
 
-/** Portada pública del taller. "Comenzar a cotizar" pide iniciar sesión si hace falta. */
+/** Portada del taller: se muestra justo después de iniciar sesión (el proxy exige sesión). */
 export default function PortadaBienvenida() {
   return (
-    <main className="flex min-h-svh flex-col items-center justify-center bg-linear-to-br from-slate-50 via-indigo-50/30 to-orange-50/30 p-6">
+    <main className="relative flex min-h-svh flex-col items-center justify-center bg-linear-to-br from-slate-50 via-indigo-50/30 to-orange-50/30 p-6 pt-16">
+      <div className="absolute top-4 right-4">
+        <BotonCerrarSesion />
+      </div>
       <div className="relative w-full max-w-2xl overflow-hidden rounded-2xl border border-indigo-100/50 bg-white p-8 text-center shadow-xl md:p-10">
         {/* Detalle decorativo superior */}
         <div className="absolute inset-x-0 top-0 h-2 bg-linear-to-r from-brand to-primary" />

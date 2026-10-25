@@ -3,7 +3,10 @@ import { createServerClient } from "@supabase/ssr";
 
 const RUTAS_PUBLICAS = ["/login", "/auth"];
 
-/** Refresca el token de sesión en cada request y redirige a /login si no hay usuario. */
+/**
+ * Refresca el token de sesión en cada request. Sin sesión, todo (incluida la
+ * portada "/") lleva al login; con sesión, el login lleva a la portada.
+ */
 export async function actualizarSesion(request: NextRequest) {
   let response = NextResponse.next({ request });
 
@@ -31,13 +34,22 @@ export async function actualizarSesion(request: NextRequest) {
   );
 
   const { data } = await supabase.auth.getClaims();
-  const esPublica = RUTAS_PUBLICAS.some((r) => request.nextUrl.pathname.startsWith(r));
+  const { pathname } = request.nextUrl;
+  const esPublica = RUTAS_PUBLICAS.some((r) => pathname.startsWith(r));
 
-  if (!data?.claims && !esPublica && request.nextUrl.pathname !== "/") {
+  const redirigir = (destino: string, search = "") => {
     const url = request.nextUrl.clone();
-    url.pathname = "/login";
-    url.search = `?next=${encodeURIComponent(request.nextUrl.pathname)}`;
-    return NextResponse.redirect(url);
+    url.pathname = destino;
+    url.search = search;
+    const redireccion = NextResponse.redirect(url);
+    // Conserva las cookies de sesión que Supabase pudo haber refrescado
+    response.cookies.getAll().forEach((c) => redireccion.cookies.set(c));
+    return redireccion;
+  };
+
+  if (!data?.claims && !esPublica) {
+    return redirigir("/login", pathname === "/" ? "" : `?next=${encodeURIComponent(pathname)}`);
   }
+  if (data?.claims && pathname === "/login") return redirigir("/");
   return response;
 }
