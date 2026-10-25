@@ -1,0 +1,527 @@
+{
+ "fuente": "CCI Actualización al 21.04.26 - (Se agrego code-numero de parte).xlsx",
+ "parametros": {
+  "tipoCambio": 3.72,
+  "tasaAdValorem": 0.06,
+  "tasaIgv": 0.16,
+  "tasaIpm": 0.02,
+  "tasaPercepcion": 0.035,
+  "tasaIgvServicios": 0.18,
+  "fleteInternacional": 2090,
+  "primaNeta": 134.27,
+  "margenGlobal": 0.4
+ },
+ "items": [
+  {
+   "partNumber": "AF1698",
+   "descripcion": "Case Transparente TPU iPhone 15",
+   "unidad": "Unid.",
+   "cantidad": 480,
+   "fobUnitario": 1.21,
+   "esperado": {
+    "costoUnitarioUsd": 1.3802659064995342,
+    "costoUnitarioPen": 5.134589172178267,
+    "valorVentaUnitarioPen": 8.557648620297112,
+    "precioVentaConIgvPen": 10.098025371950591,
+    "gananciaUnitariaPen": 3.4230594481188445
+   }
+  },
+  {
+   "partNumber": "FC3456",
+   "descripcion": "Cable USB-C Trenzado 1m",
+   "unidad": "Unid.",
+   "cantidad": 2880,
+   "fobUnitario": 0.68,
+   "esperado": {
+    "costoUnitarioUsd": 0.7756866251402342,
+    "costoUnitarioPen": 2.8855542455216714,
+    "valorVentaUnitarioPen": 4.809257075869453,
+    "precioVentaConIgvPen": 5.674923349525954,
+    "gananciaUnitariaPen": 1.9237028303477812
+   }
+  },
+  {
+   "partNumber": "AF1699",
+   "descripcion": "Protector Pantalla Vidrio Templado",
+   "unidad": "Unid.",
+   "cantidad": 2880,
+   "fobUnitario": 0.4,
+   "esperado": {
+    "costoUnitarioUsd": 0.4562862500824907,
+    "costoUnitarioPen": 1.6973848503068654,
+    "valorVentaUnitarioPen": 2.8289747505114424,
+    "precioVentaConIgvPen": 3.3381902056035018,
+    "gananciaUnitariaPen": 1.131589900204577
+   }
+  },
+  {
+   "partNumber": "FC3457",
+   "descripcion": "Audífonos In-Ear con Micrófono",
+   "unidad": "Unid.",
+   "cantidad": 10224,
+   "fobUnitario": 0.34,
+   "esperado": {
+    "costoUnitarioUsd": 0.3878433125701171,
+    "costoUnitarioPen": 1.4427771227608357,
+    "valorVentaUnitarioPen": 2.4046285379347263,
+    "precioVentaConIgvPen": 2.837461674762977,
+    "gananciaUnitariaPen": 0.9618514151738906
+   }
+  },
+  {
+   "partNumber": "AF1700",
+   "descripcion": "Cable Micro USB 2m Nylon",
+   "unidad": "Unid.",
+   "cantidad": 8640,
+   "fobUnitario": 0.26,
+   "esperado": {
+    "costoUnitarioUsd": 0.29658606255361897,
+    "costoUnitarioPen": 1.1033001526994626,
+    "valorVentaUnitarioPen": 1.8388335878324378,
+    "precioVentaConIgvPen": 2.1698236336422765,
+    "gananciaUnitariaPen": 0.7355334351329752
+   }
+  },
+  {
+   "partNumber": "FC3458",
+   "descripcion": "Soporte Anillo Pop Socket Metálico",
+   "unidad": "Unid.",
+   "cantidad": 2160,
+   "fobUnitario": 0.29,
+   "esperado": {
+    "costoUnitarioUsd": 0.3308075313098057,
+    "costoUnitarioPen": 1.2306040164724774,
+    "valorVentaUnitarioPen": 2.0510066941207956,
+    "precioVentaConIgvPen": 2.4201878990625385,
+    "gananciaUnitariaPen": 0.8204026776483182
+   }
+  },
+  {
+   "partNumber": "AF1701",
+   "descripcion": "Cargador Inalámbrico 15W Qi",
+   "unidad": "Unid.",
+   "cantidad": 240,
+   "fobUnitario": 5.71,
+   "esperado": {
+    "costoUnitarioUsd": 6.513486219927555,
+    "costoUnitarioPen": 24.230168738130505,
+    "valorVentaUnitarioPen": 40.38361456355084,
+    "precioVentaConIgvPen": 47.65266518498999,
+    "gananciaUnitariaPen": 16.153445825420338
+   }
+  },
+  {
+   "partNumber": "FC3459",
+   "descripcion": "Case Wallet Cuero PU Samsung S24",
+   "unidad": "Unid.",
+   "cantidad": 1920,
+   "fobUnitario": 0.76,
+   "esperado": {
+    "costoUnitarioUsd": 0.8669438751567323,
+    "costoUnitarioPen": 3.2250312155830443,
+    "valorVentaUnitarioPen": 5.3750520259717405,
+    "precioVentaConIgvPen": 6.342561390646654,
+    "gananciaUnitariaPen": 2.150020810388696
+   }
+  },
+  {
+   "partNumber": "AF1702",
+   "descripcion": "Adaptador USB-C a Jack 3.5mm",
+   "unidad": "Unid.",
+   "cantidad": 4800,
+   "fobUnitario": 0.28,
+   "esperado": {
+    "costoUnitarioUsd": 0.3194003750577435,
+    "costoUnitarioPen": 1.1881693952148058,
+    "valorVentaUnitarioPen": 1.9802823253580097,
+    "precioVentaConIgvPen": 2.3367331439224515,
+    "gananciaUnitariaPen": 0.7921129301432039
+   }
+  },
+  {
+   "partNumber": "FC3460",
+   "descripcion": "Adaptador YYY 67",
+   "unidad": "Unid.",
+   "cantidad": 2000,
+   "fobUnitario": 0.5,
+   "esperado": {
+    "costoUnitarioUsd": 0.5703578126031134,
+    "costoUnitarioPen": 2.121731062883582,
+    "valorVentaUnitarioPen": 3.5362184381393034,
+    "precioVentaConIgvPen": 4.172737757004378,
+    "gananciaUnitariaPen": 1.4144873752557214
+   }
+  },
+  {
+   "partNumber": "AF1703",
+   "descripcion": "Case Transparente TPU iPhone 15",
+   "unidad": "Unid.",
+   "cantidad": 480,
+   "fobUnitario": 1.21,
+   "esperado": {
+    "costoUnitarioUsd": 1.3802659064995342,
+    "costoUnitarioPen": 5.134589172178267,
+    "valorVentaUnitarioPen": 8.557648620297112,
+    "precioVentaConIgvPen": 10.098025371950591,
+    "gananciaUnitariaPen": 3.4230594481188445
+   }
+  },
+  {
+   "partNumber": "FC3461",
+   "descripcion": "Cable USB-C Trenzado 1m",
+   "unidad": "Unid.",
+   "cantidad": 2880,
+   "fobUnitario": 0.68,
+   "esperado": {
+    "costoUnitarioUsd": 0.7756866251402342,
+    "costoUnitarioPen": 2.8855542455216714,
+    "valorVentaUnitarioPen": 4.809257075869453,
+    "precioVentaConIgvPen": 5.674923349525954,
+    "gananciaUnitariaPen": 1.9237028303477812
+   }
+  },
+  {
+   "partNumber": "AF1704",
+   "descripcion": "Protector Pantalla Vidrio Templado",
+   "unidad": "Unid.",
+   "cantidad": 2880,
+   "fobUnitario": 0.4,
+   "esperado": {
+    "costoUnitarioUsd": 0.4562862500824907,
+    "costoUnitarioPen": 1.6973848503068654,
+    "valorVentaUnitarioPen": 2.8289747505114424,
+    "precioVentaConIgvPen": 3.3381902056035018,
+    "gananciaUnitariaPen": 1.131589900204577
+   }
+  },
+  {
+   "partNumber": "FC3462",
+   "descripcion": "Audífonos In-Ear con Micrófono",
+   "unidad": "Unid.",
+   "cantidad": 10224,
+   "fobUnitario": 0.34,
+   "esperado": {
+    "costoUnitarioUsd": 0.3878433125701171,
+    "costoUnitarioPen": 1.4427771227608357,
+    "valorVentaUnitarioPen": 2.4046285379347263,
+    "precioVentaConIgvPen": 2.837461674762977,
+    "gananciaUnitariaPen": 0.9618514151738906
+   }
+  },
+  {
+   "partNumber": "AF1705",
+   "descripcion": "Cable Micro USB 2m Nylon",
+   "unidad": "Unid.",
+   "cantidad": 8640,
+   "fobUnitario": 0.26,
+   "esperado": {
+    "costoUnitarioUsd": 0.29658606255361897,
+    "costoUnitarioPen": 1.1033001526994626,
+    "valorVentaUnitarioPen": 1.8388335878324378,
+    "precioVentaConIgvPen": 2.1698236336422765,
+    "gananciaUnitariaPen": 0.7355334351329752
+   }
+  },
+  {
+   "partNumber": "FC3463",
+   "descripcion": "Soporte Anillo Pop Socket Metálico",
+   "unidad": "Unid.",
+   "cantidad": 2160,
+   "fobUnitario": 0.29,
+   "esperado": {
+    "costoUnitarioUsd": 0.3308075313098057,
+    "costoUnitarioPen": 1.2306040164724774,
+    "valorVentaUnitarioPen": 2.0510066941207956,
+    "precioVentaConIgvPen": 2.4201878990625385,
+    "gananciaUnitariaPen": 0.8204026776483182
+   }
+  },
+  {
+   "partNumber": "AF1706",
+   "descripcion": "Cargador Inalámbrico 15W Qi",
+   "unidad": "Unid.",
+   "cantidad": 240,
+   "fobUnitario": 5.71,
+   "esperado": {
+    "costoUnitarioUsd": 6.513486219927555,
+    "costoUnitarioPen": 24.230168738130505,
+    "valorVentaUnitarioPen": 40.38361456355084,
+    "precioVentaConIgvPen": 47.65266518498999,
+    "gananciaUnitariaPen": 16.153445825420338
+   }
+  },
+  {
+   "partNumber": "FC3464",
+   "descripcion": "Case Wallet Cuero PU Samsung S24",
+   "unidad": "Unid.",
+   "cantidad": 1920,
+   "fobUnitario": 0.76,
+   "esperado": {
+    "costoUnitarioUsd": 0.8669438751567323,
+    "costoUnitarioPen": 3.2250312155830443,
+    "valorVentaUnitarioPen": 5.3750520259717405,
+    "precioVentaConIgvPen": 6.342561390646654,
+    "gananciaUnitariaPen": 2.150020810388696
+   }
+  },
+  {
+   "partNumber": "AF1707",
+   "descripcion": "Adaptador USB-C a Jack 3.5mm",
+   "unidad": "Unid.",
+   "cantidad": 4800,
+   "fobUnitario": 0.28,
+   "esperado": {
+    "costoUnitarioUsd": 0.3194003750577435,
+    "costoUnitarioPen": 1.1881693952148058,
+    "valorVentaUnitarioPen": 1.9802823253580097,
+    "precioVentaConIgvPen": 2.3367331439224515,
+    "gananciaUnitariaPen": 0.7921129301432039
+   }
+  },
+  {
+   "partNumber": "FC3465",
+   "descripcion": "Case Transparente TPU iPhone 15",
+   "unidad": "Unid.",
+   "cantidad": 480,
+   "fobUnitario": 1.21,
+   "esperado": {
+    "costoUnitarioUsd": 1.3802659064995342,
+    "costoUnitarioPen": 5.134589172178267,
+    "valorVentaUnitarioPen": 8.557648620297112,
+    "precioVentaConIgvPen": 10.098025371950591,
+    "gananciaUnitariaPen": 3.4230594481188445
+   }
+  },
+  {
+   "partNumber": "AF1708",
+   "descripcion": "Cable USB-C Trenzado 1m",
+   "unidad": "Unid.",
+   "cantidad": 2880,
+   "fobUnitario": 0.68,
+   "esperado": {
+    "costoUnitarioUsd": 0.7756866251402342,
+    "costoUnitarioPen": 2.8855542455216714,
+    "valorVentaUnitarioPen": 4.809257075869453,
+    "precioVentaConIgvPen": 5.674923349525954,
+    "gananciaUnitariaPen": 1.9237028303477812
+   }
+  },
+  {
+   "partNumber": "FC3466",
+   "descripcion": "Protector Pantalla Vidrio Templado",
+   "unidad": "Unid.",
+   "cantidad": 2880,
+   "fobUnitario": 0.4,
+   "esperado": {
+    "costoUnitarioUsd": 0.4562862500824907,
+    "costoUnitarioPen": 1.6973848503068654,
+    "valorVentaUnitarioPen": 2.8289747505114424,
+    "precioVentaConIgvPen": 3.3381902056035018,
+    "gananciaUnitariaPen": 1.131589900204577
+   }
+  },
+  {
+   "partNumber": "AF1709",
+   "descripcion": "Audífonos In-Ear con Micrófono",
+   "unidad": "Unid.",
+   "cantidad": 10224,
+   "fobUnitario": 0.34,
+   "esperado": {
+    "costoUnitarioUsd": 0.3878433125701171,
+    "costoUnitarioPen": 1.4427771227608357,
+    "valorVentaUnitarioPen": 2.4046285379347263,
+    "precioVentaConIgvPen": 2.837461674762977,
+    "gananciaUnitariaPen": 0.9618514151738906
+   }
+  },
+  {
+   "partNumber": "FC3467",
+   "descripcion": "Cable Micro USB 2m Nylon",
+   "unidad": "Unid.",
+   "cantidad": 8640,
+   "fobUnitario": 0.26,
+   "esperado": {
+    "costoUnitarioUsd": 0.29658606255361897,
+    "costoUnitarioPen": 1.1033001526994626,
+    "valorVentaUnitarioPen": 1.8388335878324378,
+    "precioVentaConIgvPen": 2.1698236336422765,
+    "gananciaUnitariaPen": 0.7355334351329752
+   }
+  },
+  {
+   "partNumber": "AF1710",
+   "descripcion": "Soporte Anillo Pop Socket Metálico",
+   "unidad": "Unid.",
+   "cantidad": 2160,
+   "fobUnitario": 0.29,
+   "esperado": {
+    "costoUnitarioUsd": 0.3308075313098057,
+    "costoUnitarioPen": 1.2306040164724774,
+    "valorVentaUnitarioPen": 2.0510066941207956,
+    "precioVentaConIgvPen": 2.4201878990625385,
+    "gananciaUnitariaPen": 0.8204026776483182
+   }
+  },
+  {
+   "partNumber": "FC3468",
+   "descripcion": "Cargador Inalámbrico 15W Qi",
+   "unidad": "Unid.",
+   "cantidad": 240,
+   "fobUnitario": 5.71,
+   "esperado": {
+    "costoUnitarioUsd": 6.513486219927555,
+    "costoUnitarioPen": 24.230168738130505,
+    "valorVentaUnitarioPen": 40.38361456355084,
+    "precioVentaConIgvPen": 47.65266518498999,
+    "gananciaUnitariaPen": 16.153445825420338
+   }
+  },
+  {
+   "partNumber": "AF1711",
+   "descripcion": "Case Wallet Cuero PU Samsung S24",
+   "unidad": "Unid.",
+   "cantidad": 1920,
+   "fobUnitario": 0.76,
+   "esperado": {
+    "costoUnitarioUsd": 0.8669438751567323,
+    "costoUnitarioPen": 3.2250312155830443,
+    "valorVentaUnitarioPen": 5.3750520259717405,
+    "precioVentaConIgvPen": 6.342561390646654,
+    "gananciaUnitariaPen": 2.150020810388696
+   }
+  },
+  {
+   "partNumber": "FC3469",
+   "descripcion": "Adaptador USB-C a Jack 3.5mm",
+   "unidad": "Unid.",
+   "cantidad": 4800,
+   "fobUnitario": 0.28,
+   "esperado": {
+    "costoUnitarioUsd": 0.3194003750577435,
+    "costoUnitarioPen": 1.1881693952148058,
+    "valorVentaUnitarioPen": 1.9802823253580097,
+    "precioVentaConIgvPen": 2.3367331439224515,
+    "gananciaUnitariaPen": 0.7921129301432039
+   }
+  }
+ ],
+ "gastos": [
+  {
+   "concepto": "Handling",
+   "monto": 34.03,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Servicio de Descarga",
+   "monto": 100.69,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Movilización de Carga",
+   "monto": 36.46,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Tracción",
+   "monto": 48.61,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Servicio al Cliente (V°B°)",
+   "monto": 12.15,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Gastos Operativos Agente",
+   "monto": 70,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Almacenaje",
+   "monto": 121.53,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Cargadores / Cuadrilla",
+   "monto": 62.5,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Serv. Administrativos",
+   "monto": 13.89,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Seguro de Contenedor",
+   "monto": 41.67,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Posicionamiento de Carga",
+   "monto": 62.5,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Transporte Interno / Última Milla",
+   "monto": 104.17,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Precinto",
+   "monto": 3.13,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Otros Gastos",
+   "monto": 121.53,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Comisión del Agente de Aduanas",
+   "monto": 164.38,
+   "afectoIgv": true
+  },
+  {
+   "concepto": "Gastos Administrativos Empresa",
+   "monto": 120,
+   "afectoIgv": false
+  },
+  {
+   "concepto": "Comisión por Transferencia Bancaria",
+   "monto": 47.5,
+   "afectoIgv": false
+  },
+  {
+   "concepto": "Intereses de Letras",
+   "monto": 0,
+   "afectoIgv": false
+  },
+  {
+   "concepto": "Emisión Carta de Crédito",
+   "monto": 0,
+   "afectoIgv": false
+  },
+  {
+   "concepto": "Comisiones C/C",
+   "monto": 0,
+   "afectoIgv": false
+  }
+ ],
+ "esperado": {
+  "fob": 43641.280000000006,
+  "cfr": 45731.280000000006,
+  "cif": 45865.55,
+  "adValorem": 2752,
+  "ipm": 972,
+  "igv": 7779,
+  "deudaAduanera": 11503,
+  "percepcion": 2007.9,
+  "igvSeguro": 24.1686,
+  "gastosAfectos": 997.2399999999999,
+  "gastosNoAfectos": 167.5,
+  "igvGastos": 179.50319999999996,
+  "costoTotalUsd": 49782.29,
+  "factor": 1.1407156252062267,
+  "creditoFiscal": 10962.5718
+ }
+}
