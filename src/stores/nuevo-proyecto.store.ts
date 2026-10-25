@@ -78,9 +78,19 @@ interface NuevoProyectoAcciones {
   setProyectoId: (id: string) => void;
   setEstadoGuardado: (estado: EstadoGuardado) => void;
   reset: () => void;
+  /** Reemplaza el borrador por una operación guardada (abrir) o su copia (duplicar). */
+  cargarOperacion: (op: OperacionCargada) => void;
 }
 
 export type NuevoProyectoState = NuevoProyectoData & NuevoProyectoAcciones;
+
+export interface OperacionCargada {
+  proyectoId: string | null;
+  datosGenerales: DatosGenerales;
+  config: ConfiguracionCosteo;
+  items: ItemImportacion[];
+  gastos: GastoImportacion[];
+}
 
 const nuevoId = () => crypto.randomUUID();
 
@@ -238,12 +248,25 @@ export const useNuevoProyectoStore = create<NuevoProyectoState>()(
         setProyectoId: (id) => set({ proyectoId: id }),
         setEstadoGuardado: (estado) => set({ estadoGuardado: estado }),
         reset: () => set(estadoInicial()),
+        cargarOperacion: (op) =>
+          set({
+            pasoActual: op.items.length > 0 ? 4 : 1,
+            proyectoId: op.proyectoId,
+            datosGenerales: op.datosGenerales,
+            config: op.config,
+            items: Object.fromEntries(op.items.map((it) => [it.id, it])),
+            itemIds: op.items.map((it) => it.id),
+            gastos: Object.fromEntries(op.gastos.map((g) => [g.id, g])),
+            gastoIds: op.gastos.map((g) => g.id),
+            estadoGuardado: op.proyectoId ? "guardado" : "idle",
+          }),
       })),
       {
         name: "nuevo-proyecto-borrador",
         storage: createJSONStorage(() => localStorage),
-        // El borrador sobrevive a un refresh; el estado de guardado no.
+        // El borrador sobrevive a un refresh; "guardando"/"error" no tienen sentido tras recargar.
         partialize: (s) => ({
+          estadoGuardado: s.estadoGuardado === "guardado" ? ("guardado" as const) : ("idle" as const),
           pasoActual: s.pasoActual,
           proyectoId: s.proyectoId,
           datosGenerales: s.datosGenerales,
@@ -318,6 +341,7 @@ export const useResultadoItem = (id: string) =>
 /** Montar una vez en la página del asistente para recuperar el borrador local. */
 export function useHidratarBorrador() {
   useEffect(() => {
-    void useNuevoProyectoStore.persist.rehydrate();
+    // Solo la primera vez: rehidratar de nuevo reemplaza objetos y parecería una edición
+    if (!useNuevoProyectoStore.persist.hasHydrated()) void useNuevoProyectoStore.persist.rehydrate();
   }, []);
 }

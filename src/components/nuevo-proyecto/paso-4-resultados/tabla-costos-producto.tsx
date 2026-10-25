@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import type { ClasificacionMargen } from "@/core/costeo";
-import { useHistorialCostosStore, useUltimoCosto } from "@/stores/historial-costos.store";
+import { useHistorialLocalStore, useUltimoCosto } from "@/stores/historial-local.store";
 import { useItem, useItemIds, useNuevoProyectoStore, useResultadoItem } from "@/stores/nuevo-proyecto.store";
 import { InputNumero } from "../campos";
 import { factor, num, pen } from "../formato";
@@ -20,14 +20,10 @@ const BADGE: Record<ClasificacionMargen, { texto: string; variant: "success" | "
 /** Hojas "Costos x Producto" + "Precio de Venta" en una sola tabla. */
 export function TablaCostosProducto() {
   const itemIds = useItemIds();
-  const proyectoId = useNuevoProyectoStore((s) => s.proyectoId);
-  const cargarHistorial = useHistorialCostosStore((s) => s.cargar);
+  const hidratarHistorial = useHistorialLocalStore((s) => s.hidratar);
 
-  // Los Part Numbers solo cambian en el Paso 2: basta consultar al montar o al guardar.
-  useEffect(() => {
-    const { items } = useNuevoProyectoStore.getState();
-    void cargarHistorial(itemIds.map((id) => items[id]?.partNumber ?? ""), proyectoId);
-  }, [itemIds, proyectoId, cargarHistorial]);
+  // El historial vive en localStorage: se lee en el cliente al montar
+  useEffect(() => hidratarHistorial(), [hidratarHistorial]);
   return (
     <Card>
       <CardHeader>
@@ -97,7 +93,8 @@ const FilaCosto = memo(function FilaCosto({ id }: { id: string }) {
 
 /** Una línea bajo el costo: cuánto cambió respecto a la última compra del mismo SKU. */
 function ComparacionCompraAnterior({ partNumber, costoActual }: { partNumber: string; costoActual: number }) {
-  const anterior = useUltimoCosto(partNumber);
+  const proyectoId = useNuevoProyectoStore((s) => s.proyectoId);
+  const anterior = useUltimoCosto(partNumber, proyectoId);
   if (!anterior) return null;
 
   const diferencia = costoActual - anterior.costoUnitarioPen;
