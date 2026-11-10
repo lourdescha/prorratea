@@ -6,8 +6,8 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { selectResultado, useNuevoProyectoStore } from "@/stores/nuevo-proyecto.store";
 
-const nombreArchivo = (nombre: string) =>
-  `reporte-${
+export const nombreArchivo = (nombre: string, prefijo = "reporte") =>
+  `${prefijo}-${
     nombre
       .normalize("NFD")
       .replace(/[̀-ͯ]/g, "")

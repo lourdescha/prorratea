@@ -10,6 +10,7 @@ import { ComposicionCostoChart } from "./composicion-costo-chart";
 import { CostoVsPrecioChart } from "./costo-vs-precio-chart";
 import { CreditoFiscalCard } from "./credito-fiscal-card";
 import { KpisOperacion } from "./kpis-operacion";
+import { BotonLiquidacion } from "./liquidacion/boton-liquidacion";
 import { TablaCostosProducto } from "./tabla-costos-producto";
 
 type Pestana = "resumen" | "skus" | "credito";
@@ -29,6 +30,7 @@ export function PasoResultados() {
           </Badge>
         </div>
         <div className="flex flex-wrap gap-2">
+          <BotonLiquidacion />
           <BotonDescargarPdf />
           <BotonGuardar />
         </div>

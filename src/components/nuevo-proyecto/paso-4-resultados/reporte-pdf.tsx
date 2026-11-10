@@ -16,7 +16,7 @@ export interface DatosReporte {
 }
 
 // Paleta categórica validada (misma que los gráficos de la app, modo claro)
-const COLORES = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"];
+export const COLORES = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"];
 const TINTA = "#0f172a";
 const MARCA = "#312e81";
 const TINTA_2 = "#64748b";
@@ -96,7 +96,7 @@ function arco(cx: number, cy: number, R: number, r: number, a0: number, a1: numb
   return `M ${p(R, a0)} A ${R} ${R} 0 ${grande} 1 ${p(R, a1)} L ${p(r, a1)} A ${r} ${r} 0 ${grande} 0 ${p(r, a0)} Z`;
 }
 
-function Donut({ partes }: { partes: { valor: number; color: string }[] }) {
+export function Donut({ partes }: { partes: { valor: number; color: string }[] }) {
   const total = partes.reduce((a, p) => a + p.valor, 0);
   const C = 60;
   const visibles = total > 0 ? partes.filter((p) => p.valor > 0) : [];
